@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projects\\Peripharals_Store\\Peripharals_Store\\Peripharals_Store.csproj": {}
+    "C:\\Gaming_Peripharals_Store\\Gaming_Peripharals_Store\\Peripharals_Store\\Peripharals_Store\\Peripharals_Store.csproj": {}
   },
   "projects": {
-    "C:\\Projects\\Peripharals_Store\\Peripharals_Store\\Peripharals_Store.csproj": {
+    "C:\\Gaming_Peripharals_Store\\Gaming_Peripharals_Store\\Peripharals_Store\\Peripharals_Store\\Peripharals_Store.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\Peripharals_Store\\Peripharals_Store\\Peripharals_Store.csproj",
+        "projectUniqueName": "C:\\Gaming_Peripharals_Store\\Gaming_Peripharals_Store\\Peripharals_Store\\Peripharals_Store\\Peripharals_Store.csproj",
         "projectName": "Peripharals_Store",
-        "projectPath": "C:\\Projects\\Peripharals_Store\\Peripharals_Store\\Peripharals_Store.csproj",
+        "projectPath": "C:\\Gaming_Peripharals_Store\\Gaming_Peripharals_Store\\Peripharals_Store\\Peripharals_Store\\Peripharals_Store.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\Peripharals_Store\\Peripharals_Store\\obj\\",
+        "outputPath": "C:\\Gaming_Peripharals_Store\\Gaming_Peripharals_Store\\Peripharals_Store\\Peripharals_Store\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -47,6 +47,12 @@
               "version": "[3.1.4, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[3.1.4, )"
             }
