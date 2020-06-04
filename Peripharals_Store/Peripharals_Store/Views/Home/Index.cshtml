@@ -1,8 +1,23 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿@model IEnumerable<Peripharals_Store.Models.Product.ProductModel>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container">
+    <main role="main" class="pb-3">
+        <div class="card-columns">
+            @foreach (var product in Model) 
+            {
+                <div class="card productCard">
+                    <div class="card-img productImage">
+                        <img src="@product.ImageUrl" width="340" />
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">@product.Name</h5>
+                        <h6>@product.Price.ToString("c")</h6>
+                    </div>
+                    <div class="card-footer">
+                        <button type="submit">Purchase</button>
+                    </div>
+                </div>
+            }
+        </div>
+    </main>
 </div>

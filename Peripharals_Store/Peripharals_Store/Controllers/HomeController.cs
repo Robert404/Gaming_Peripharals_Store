@@ -6,21 +6,24 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Peripharals_Store.Models;
+using Peripharals_Store.Models.Product;
 
 namespace Peripharals_Store.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly ApplicationDbContext _context;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, ApplicationDbContext context)
         {
             _logger = logger;
+            _context = context;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(string category)
         {
-            return View();
+            return View(_context.Products.Where(p => category == null || p.Category == category).OrderBy(p => p.Id));
         }
 
         public IActionResult Privacy()

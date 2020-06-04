@@ -151,3 +151,4 @@ C:\Gaming_Peripharals_Store\Gaming_Peripharals_Store\Peripharals_Store\Periphara
 C:\Gaming_Peripharals_Store\Gaming_Peripharals_Store\Peripharals_Store\Peripharals_Store\obj\Debug\netcoreapp3.0\Peripharals_Store.pdb
 C:\Gaming_Peripharals_Store\Gaming_Peripharals_Store\Peripharals_Store\Peripharals_Store\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\Gaming_Peripharals_Store\Gaming_Peripharals_Store\Peripharals_Store\Peripharals_Store\obj\Debug\netcoreapp3.0\Peripharals_Store.MvcApplicationPartsAssemblyInfo.cache
+C:\Gaming_Peripharals_Store\Gaming_Peripharals_Store\Peripharals_Store\Peripharals_Store\obj\Debug\netcoreapp3.0\Razor\Views\Shared\Components\NavigationMenu\Default.cshtml.g.cs
