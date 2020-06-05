@@ -32,6 +32,8 @@ namespace Peripharals_Store
             options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddIdentity<ApplicationUser, IdentityRole>()
             .AddEntityFrameworkStores<ApplicationDbContext>();
+            services.AddMemoryCache();
+            services.AddSession();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -54,6 +56,7 @@ namespace Peripharals_Store
 
             app.UseAuthorization();
             app.UseAuthentication();
+            app.UseSession();
 
             app.UseEndpoints(endpoints =>
             {

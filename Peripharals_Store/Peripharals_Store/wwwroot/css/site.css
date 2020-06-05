@@ -75,7 +75,7 @@ body {
 
 
 /*Buttons*/
-.categoryBtn {
-    display: inline-block;
-    width: 80%;
+
+.shoppingBtn {
+    margin-left: 50px;
 }

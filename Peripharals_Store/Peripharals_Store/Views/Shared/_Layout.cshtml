@@ -1,10 +1,13 @@
-﻿<!DOCTYPE html>
+﻿@using Peripharals_Store.Infrastructure
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Peripharals Store</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
@@ -40,6 +43,11 @@
                         <a asp-controller="Account" asp-action="Login">Sign In</a>
                         <a asp-controller="Account" asp-action="Register">Sign Up</a>
                     }
+                </div>
+                <div>
+                    <a class="btn btn-sm btn-secondary shoppingBtn" asp-action="Index" asp-controller="Cart" asp-route-returnUrl="@ViewContext.HttpContext.Request.PathAndQuery()">
+                        <i class="fa fa-shopping-cart"></i>
+                    </a>
                 </div>
             </div>
         </nav>
