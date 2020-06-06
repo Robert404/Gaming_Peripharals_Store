@@ -10,8 +10,10 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Peripharals_Store.Data;
 using Peripharals_Store.Models;
 using Peripharals_Store.Models.User;
+using Peripharals_Store.Service;
 
 namespace Peripharals_Store
 {
@@ -39,6 +41,7 @@ namespace Peripharals_Store
                 options.Password.RequireUppercase = false;
             })
             .AddEntityFrameworkStores<ApplicationDbContext>();
+            services.AddScoped<IProduct, ProductModelService>();
             services.AddMemoryCache();
             services.AddSession();
         }

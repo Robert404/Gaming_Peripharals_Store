@@ -1,0 +1,31 @@
+﻿@model Peripharals_Store.Models.Product.ProductListModel
+
+<div class="container">
+    <div class="row">
+        <div>All Users</div>
+    </div>
+    <div class="row">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Id</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var p in Model.Products) 
+                {
+                    <tr>
+                        <td>@p.Name</td>
+                        <td>@p.Price</td>
+                        <td>@p.Id</td>
+                        <td>
+                            <a class="btn btn-danger" asp-controller="Product" asp-action="DeleteProduct" asp-route-id="@p.Id">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -79,3 +79,7 @@ body {
 .shoppingBtn {
     margin-left: 50px;
 }
+
+#categoryBtn {
+    margin-left: -340px;   
+}

@@ -27,6 +27,12 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
+                        <li class="nav-item">
+                            @if (User.IsInRole("Admin")) 
+                            {
+                                <a class="nav-link text-dark" asp-controller="Product" asp-action="Index">All Products</a>
+                            }
+                        </li>
                     </ul>
                 </div>
                 <div>
@@ -51,9 +57,7 @@
                 </div>
             </div>
         </nav>
-        <div id="categoryBtn" class="col-3">
-            @await Component.InvokeAsync("NavigationMenu")
-        </div>
+        
     </header>
     <div class="container">
         <main role="main" class="pb-3">

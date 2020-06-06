@@ -1,10 +1,13 @@
 ﻿@model IEnumerable<Peripharals_Store.Models.Product.ProductModel>
 @using Peripharals_Store.Infrastructure
 
+<div id="categoryBtn" class="col-3">
+    @await Component.InvokeAsync("NavigationMenu")
+</div>
 <div class="container">
     <main role="main" class="pb-3">
         <div class="card-columns">
-            @foreach (var product in Model) 
+            @foreach (var product in Model)
             {
                 <div class="card productCard">
                     <div class="card-img productImage">

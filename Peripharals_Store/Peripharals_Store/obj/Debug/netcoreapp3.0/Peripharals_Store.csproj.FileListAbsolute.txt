@@ -154,3 +154,4 @@ C:\Gaming_Peripharals_Store\Gaming_Peripharals_Store\Peripharals_Store\Periphara
 C:\Gaming_Peripharals_Store\Gaming_Peripharals_Store\Peripharals_Store\Peripharals_Store\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
 C:\Gaming_Peripharals_Store\Gaming_Peripharals_Store\Peripharals_Store\Peripharals_Store\obj\Debug\netcoreapp3.0\Razor\Views\Cart\Index.cshtml.g.cs
 C:\Gaming_Peripharals_Store\Gaming_Peripharals_Store\Peripharals_Store\Peripharals_Store\obj\Debug\netcoreapp3.0\Peripharals_Store.csprojAssemblyReference.cache
+C:\Gaming_Peripharals_Store\Gaming_Peripharals_Store\Peripharals_Store\Peripharals_Store\obj\Debug\netcoreapp3.0\Razor\Views\Product\Index.cshtml.g.cs
