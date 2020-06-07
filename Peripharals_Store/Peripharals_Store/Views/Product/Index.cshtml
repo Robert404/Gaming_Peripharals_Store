@@ -11,6 +11,9 @@
                     <th>Name</th>
                     <th>Price</th>
                     <th>Id</th>
+                    <th>
+                        <a class="btn btn-dark" asp-controller="Product" asp-action="Create">Create</a>
+                    </th>
                 </tr>
             </thead>
             <tbody>
@@ -22,6 +25,7 @@
                         <td>@p.Id</td>
                         <td>
                             <a class="btn btn-danger" asp-controller="Product" asp-action="DeleteProduct" asp-route-id="@p.Id">Delete</a>
+                            <a class="btn btn-primary" asp-controller="Product" asp-action="Edit" asp-route-id="@p.Id">Edit</a>
                         </td>
                     </tr>
                 }
