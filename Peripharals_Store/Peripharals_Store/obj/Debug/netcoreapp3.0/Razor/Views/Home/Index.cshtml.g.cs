@@ -27,6 +27,13 @@ using Peripharals_Store.Models;
 #line hidden
 #nullable disable
 #nullable restore
+#line 3 "C:\Gaming_Peripharals_Store\Gaming_Peripharals_Store\Peripharals_Store\Peripharals_Store\Views\_ViewImports.cshtml"
+using Peripharals_Store.Models.ShoppingBasket;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 2 "C:\Gaming_Peripharals_Store\Gaming_Peripharals_Store\Peripharals_Store\Peripharals_Store\Views\Home\Index.cshtml"
 using Peripharals_Store.Infrastructure;
 
@@ -34,7 +41,7 @@ using Peripharals_Store.Infrastructure;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"1a55febdb91808607455f6b9447a61a2470aba43", @"/Views/Home/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"21777ab6b79e28fdaa1f5c7112f992f17c0825f0", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"fbcbed0f9111bfeb4df7698dbc62c66f757a001c", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<IEnumerable<Peripharals_Store.Models.Product.ProductModel>>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-action", "AddToCart", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -109,7 +116,7 @@ WriteAttributeValue("", 505, product.ImageUrl, 505, 17, false);
 #line hidden
 #nullable disable
             WriteLiteral("</h6>\r\n                    </div>\r\n                    <div class=\"card-footer\">\r\n                        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1a55febdb91808607455f6b9447a61a2470aba436665", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1a55febdb91808607455f6b9447a61a2470aba436908", async() => {
                 WriteLiteral(@"
                             <span class=""card-text p-1"">
                                 <button type=""submit"" class=""btn btn-success btn-sm"">

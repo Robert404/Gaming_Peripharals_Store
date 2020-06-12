@@ -12,6 +12,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Peripharals_Store.Data;
 using Peripharals_Store.Models;
+using Peripharals_Store.Models.OrderModel;
 using Peripharals_Store.Models.User;
 using Peripharals_Store.Service;
 
@@ -32,16 +33,8 @@ namespace Peripharals_Store
             services.AddControllersWithViews();
             services.AddDbContext<ApplicationDbContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-            services.AddIdentity<ApplicationUser, IdentityRole>(options =>
-            {
-                options.Password.RequiredLength = 5;
-                options.Password.RequireNonAlphanumeric = false;
-                options.Password.RequireDigit = false;
-                options.Password.RequireLowercase = false;
-                options.Password.RequireUppercase = false;
-            })
-            .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddScoped<IProduct, ProductModelService>();
+            services.AddScoped<IOrderRepository, EFOrderRepository>();
             services.AddMemoryCache();
             services.AddSession();
         }
@@ -75,24 +68,7 @@ namespace Peripharals_Store
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
 
-            CreateRoles(services).Wait();
         }
 
-        public async Task CreateRoles(IServiceProvider serviceProvider)
-        {
-            var RoleManager = serviceProvider.GetRequiredService<RoleManager<IdentityRole>>();
-            var UserManager = serviceProvider.GetRequiredService<UserManager<ApplicationUser>>();
-
-            IdentityResult roleResult;
-            var roleCheck = await RoleManager.RoleExistsAsync("Admin");
-            if (!roleCheck)
-            {
-                roleResult = await RoleManager.CreateAsync(new IdentityRole("Admin"));
-            }
-
-            ApplicationUser user = await UserManager.FindByIdAsync("4ba4c4f5-9cb5-476c-b01c-e665b9414169");
-            var User = new IdentityUser();
-            await UserManager.AddToRoleAsync(user, "Admin");
-        }
     }
 }

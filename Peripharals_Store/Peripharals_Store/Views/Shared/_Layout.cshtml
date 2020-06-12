@@ -36,21 +36,6 @@
                     </ul>
                 </div>
                 <div>
-                    @if (User.Identity.IsAuthenticated)
-                    {
-                        <p>@User.Identity.Name</p>
-
-                        <form method="post" asp-controller="Account" asp-action="Logout">
-                            <input type="submit" value="Выход" />
-                        </form>
-                    }
-                    else
-                    {
-                        <a asp-controller="Account" asp-action="Login">Sign In</a>
-                        <a asp-controller="Account" asp-action="Register">Sign Up</a>
-                    }
-                </div>
-                <div>
                     <a class="btn btn-sm btn-secondary shoppingBtn" asp-action="Index" asp-controller="Cart" asp-route-returnUrl="@ViewContext.HttpContext.Request.PathAndQuery()">
                         <i class="fa fa-shopping-cart"></i>
                     </a>

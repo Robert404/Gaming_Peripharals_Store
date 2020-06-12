@@ -26,8 +26,15 @@ using Peripharals_Store.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\Gaming_Peripharals_Store\Gaming_Peripharals_Store\Peripharals_Store\Peripharals_Store\Views\_ViewImports.cshtml"
+using Peripharals_Store.Models.ShoppingBasket;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"36c4cc51ba7bf2cc31d0e831ee930a885e16c6e0", @"/Views/Product/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"21777ab6b79e28fdaa1f5c7112f992f17c0825f0", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"fbcbed0f9111bfeb4df7698dbc62c66f757a001c", @"/Views/_ViewImports.cshtml")]
     public class Views_Product_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<Peripharals_Store.Models.Product.ProductListModel>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("btn btn-dark"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -75,7 +82,7 @@ using Peripharals_Store.Models;
                     <th>Id</th>
                     <th>
                         ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "36c4cc51ba7bf2cc31d0e831ee930a885e16c6e05872", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "36c4cc51ba7bf2cc31d0e831ee930a885e16c6e06115", async() => {
                 WriteLiteral("Create");
             }
             );
@@ -127,7 +134,7 @@ using Peripharals_Store.Models;
 #line hidden
 #nullable disable
             WriteLiteral("</td>\r\n                        <td>\r\n                            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "36c4cc51ba7bf2cc31d0e831ee930a885e16c6e08716", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "36c4cc51ba7bf2cc31d0e831ee930a885e16c6e08959", async() => {
                 WriteLiteral("Delete");
             }
             );
@@ -161,7 +168,7 @@ using Peripharals_Store.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "36c4cc51ba7bf2cc31d0e831ee930a885e16c6e011284", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "36c4cc51ba7bf2cc31d0e831ee930a885e16c6e011527", async() => {
                 WriteLiteral("Edit");
             }
             );

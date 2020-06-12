@@ -133,8 +133,6 @@ C:\Gaming_Peripharals_Store\Gaming_Peripharals_Store\Peripharals_Store\Periphara
 C:\Gaming_Peripharals_Store\Gaming_Peripharals_Store\Peripharals_Store\Peripharals_Store\obj\Debug\netcoreapp3.0\Peripharals_Store.TagHelpers.input.cache
 C:\Gaming_Peripharals_Store\Gaming_Peripharals_Store\Peripharals_Store\Peripharals_Store\obj\Debug\netcoreapp3.0\Peripharals_Store.TagHelpers.output.cache
 C:\Gaming_Peripharals_Store\Gaming_Peripharals_Store\Peripharals_Store\Peripharals_Store\obj\Debug\netcoreapp3.0\Peripharals_Store.RazorCoreGenerate.cache
-C:\Gaming_Peripharals_Store\Gaming_Peripharals_Store\Peripharals_Store\Peripharals_Store\obj\Debug\netcoreapp3.0\Razor\Views\Account\Login.cshtml.g.cs
-C:\Gaming_Peripharals_Store\Gaming_Peripharals_Store\Peripharals_Store\Peripharals_Store\obj\Debug\netcoreapp3.0\Razor\Views\Account\Register.cshtml.g.cs
 C:\Gaming_Peripharals_Store\Gaming_Peripharals_Store\Peripharals_Store\Peripharals_Store\obj\Debug\netcoreapp3.0\Razor\Views\Home\Index.cshtml.g.cs
 C:\Gaming_Peripharals_Store\Gaming_Peripharals_Store\Peripharals_Store\Peripharals_Store\obj\Debug\netcoreapp3.0\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Gaming_Peripharals_Store\Gaming_Peripharals_Store\Peripharals_Store\Peripharals_Store\obj\Debug\netcoreapp3.0\Razor\Views\Shared\Error.cshtml.g.cs
@@ -153,7 +151,9 @@ C:\Gaming_Peripharals_Store\Gaming_Peripharals_Store\Peripharals_Store\Periphara
 C:\Gaming_Peripharals_Store\Gaming_Peripharals_Store\Peripharals_Store\Peripharals_Store\obj\Debug\netcoreapp3.0\Peripharals_Store.MvcApplicationPartsAssemblyInfo.cache
 C:\Gaming_Peripharals_Store\Gaming_Peripharals_Store\Peripharals_Store\Peripharals_Store\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
 C:\Gaming_Peripharals_Store\Gaming_Peripharals_Store\Peripharals_Store\Peripharals_Store\obj\Debug\netcoreapp3.0\Razor\Views\Cart\Index.cshtml.g.cs
-C:\Gaming_Peripharals_Store\Gaming_Peripharals_Store\Peripharals_Store\Peripharals_Store\obj\Debug\netcoreapp3.0\Peripharals_Store.csprojAssemblyReference.cache
 C:\Gaming_Peripharals_Store\Gaming_Peripharals_Store\Peripharals_Store\Peripharals_Store\obj\Debug\netcoreapp3.0\Razor\Views\Product\Index.cshtml.g.cs
 C:\Gaming_Peripharals_Store\Gaming_Peripharals_Store\Peripharals_Store\Peripharals_Store\obj\Debug\netcoreapp3.0\Razor\Views\Product\Edit.cshtml.g.cs
 C:\Gaming_Peripharals_Store\Gaming_Peripharals_Store\Peripharals_Store\Peripharals_Store\obj\Debug\netcoreapp3.0\Razor\Views\Product\Create.cshtml.g.cs
+C:\Gaming_Peripharals_Store\Gaming_Peripharals_Store\Peripharals_Store\Peripharals_Store\obj\Debug\netcoreapp3.0\Razor\Views\Order\Checkout.cshtml.g.cs
+C:\Gaming_Peripharals_Store\Gaming_Peripharals_Store\Peripharals_Store\Peripharals_Store\obj\Debug\netcoreapp3.0\Peripharals_Store.csprojAssemblyReference.cache
+C:\Gaming_Peripharals_Store\Gaming_Peripharals_Store\Peripharals_Store\Peripharals_Store\obj\Debug\netcoreapp3.0\Razor\Views\Order\Completed.cshtml.g.cs

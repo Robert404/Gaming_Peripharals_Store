@@ -30,11 +30,12 @@ namespace Peripharals_Store.Controllers
 
         public RedirectToActionResult AddToCart(int productId, string returnUrl) 
         {
+            var user = _context.Users.FirstOrDefault(p => p.UserName == User.Identity.Name);
             ProductModel product = _context.Products.FirstOrDefault(p => p.Id == productId);
             if (product != null) 
             {
                 Cart cart = GetCart();
-                cart.AddItem(product, 1);
+                cart.AddItem(product, 1, user);
                 SaveCart(cart);
             }
 
@@ -66,6 +67,5 @@ namespace Peripharals_Store.Controllers
             HttpContext.Session.SetJson("Cart", cart);
         }
 
-        
     }
 }
