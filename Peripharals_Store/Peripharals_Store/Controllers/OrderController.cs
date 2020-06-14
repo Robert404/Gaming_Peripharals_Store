@@ -5,6 +5,8 @@ using Peripharals_Store.Models.ShoppingBasket;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
+using System.Net.Mail;
 using System.Threading.Tasks;
 
 namespace Peripharals_Store.Controllers
@@ -18,19 +20,15 @@ namespace Peripharals_Store.Controllers
             _context = context;
         }
 
-        public IActionResult Checkout(Cart cart)
-        {
-            var model = new Order
-            {
-                Lines = cart.Lines.ToList()
-            };
 
-            return View(model);
+        public IActionResult Checkout()
+        {
+            return View(new Order());
         }
 
         [HttpPost]
         public IActionResult Checkout(Order order) 
-        { 
+        {
             _context.Orders.Add(order);
             _context.SaveChanges();
             return RedirectToAction("Completed", "Order");

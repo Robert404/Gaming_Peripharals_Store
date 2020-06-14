@@ -34,7 +34,6 @@ namespace Peripharals_Store
             services.AddDbContext<ApplicationDbContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddScoped<IProduct, ProductModelService>();
-            services.AddScoped<IOrderRepository, EFOrderRepository>();
             services.AddMemoryCache();
             services.AddSession();
         }
