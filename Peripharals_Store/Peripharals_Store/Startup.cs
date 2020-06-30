@@ -65,6 +65,10 @@ namespace Peripharals_Store
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+                endpoints.MapControllerRoute(
+                    name: "category",
+                    pattern: "{controller=Home}/{action=Index}/{category?}");
             });
 
         }
