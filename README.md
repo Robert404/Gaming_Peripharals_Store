@@ -3,7 +3,7 @@
 This is basic ASP.NET Core project, so You can use **git clone** command and download it. If You dont have git, download it [HERE](https://git-scm.com/).
 
 # About Project
-This Online Shop uses 
+What i have done in this project:
 
 * Developed shopping basket
 * Used Entity Framework and Sql Server
